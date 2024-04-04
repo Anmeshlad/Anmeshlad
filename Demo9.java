@@ -1,25 +1,23 @@
-package ArrayDemos;
+package StringDemos;
 
-//Q. Write a program to copy an array by iterating the array.
+//Q. Write a program to test methods of String Buffer.
 
 public class Demo9 {
-	
+
 	public static void main(String[] args) {
-		int arr1[]= {1,2,3,4,5};
-		int arr2[]= new int[arr1.length];
+		StringBuffer str=new StringBuffer("Welcome");
+		str.append(" "+"Home..");
+		System.out.println(str);
 		
-		for(int i=0;i<arr1.length;i++) {
-			arr2[i]=arr1[i];
-		}
+		str.delete(0, 5);
+		System.out.println(str);
 		
-		System.out.println("Element of arr1:");
-		for(int i=0;i<arr1.length;i++) {
-			System.out.println(arr1[i]);
-		}
-		System.out.println("Element of arr2:");
-		for(int i=0;i<arr2.length;i++) {
-			System.out.println(arr2[i]);
-		}
+		str.reverse();
+		System.out.println(str);
+		
+		str.replace(0, 5, "X");
+		System.out.println(str);
+		
 
 	}
 

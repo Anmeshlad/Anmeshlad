@@ -1,30 +1,13 @@
-package ArrayDemos;
+package StringDemos;
 
-//Q. Write a program to replace 0‟s with 1‟s. e.g array is [0,1,0,1,0,1,0,1,0,1,0,1,0].
+//Q. Write a program to convert all the characters in a string to uppercase.
 
 public class Demo20 {
-	
-	static void replace(int[]arr) {
-		System.out.println();
-		System.out.print("Replace 0's with 1's :");
-		for(int i=0;i<arr.length;i++) {
-			if(0==0) {
-				arr[i]=1;
-				System.out.print(arr[i]);
-			}
-		}
-	}
 
 	public static void main(String[] args) {
-		int arr[]= {0,1,0,1,0,1,0,1,0,1,0,1,0};
-		System.out.print("Orignal array : ");
-		
-		for(int i=0;i<arr.length;i++) {
-			
-			System.out.print(arr[i]);
-		}
-		
-		replace(arr);
+		String str="anmesh lad";
+		System.out.println("Given String : "+ str);
+		System.out.println("Convert lower to uppercase : "+ str.toUpperCase());
 
 	}
 

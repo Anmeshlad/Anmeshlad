@@ -1,27 +1,17 @@
-package ArrayDemos;
+package StringDemos;
 
-//Q. Write a program to find the second largest element in an array.
+//Q. Write a program to get the index of all the characters of the alphabet.
 
 public class Demo13 {
-	
-	static void SecondLargetNumber(int arr[]) {
-		
-		for(int i=0;i<arr.length;i++) {
-//			if(arr[i]){
-//				System.out.println(arr[i]);
-//		    }
-		}
-		System.out.println("Second largets array element is :");
-		
-	}
 
 	public static void main(String[] args) {
-		
-		int arr[]= {1,2,3,3,2,1};
-		for(int i=0;i<arr.length;i++) {
-			System.out.print(arr[i]+", ");
+		char ch[]={'A','B','C','D','E','F','G','H','I','J','K'};
+		System.out.println("index of all the characters of the alphabet :");
+		for(int i=0;i<ch.length;i++) {
+			System.out.println(i);
 		}
-		System.out.println();
-		SecondLargetNumber(arr);
+		
+
 	}
+
 }

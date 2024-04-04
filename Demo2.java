@@ -1,29 +1,15 @@
-package ArrayDemos;
+package StringDemos;
 
-import java.util.Arrays;
-
-//Q. Write a program to perform binary search.
+//Q. Write a program to get the character at the given index within the String.
 
 public class Demo2 {
-	
-//	static void BinarySearch(int arr[]) {
-//		int a=45;
-//		System.out.print(a + " Found at index "+ Arrays.binarySearch(arr, a));
-//	}
 
 	public static void main(String[] args) {
-		System.out.print("Given array: ");
-		int arr[]= {21,2,45,6,8,7};
-		
-		for(int i=0;i<arr.length;i++) {
-			System.out.print(arr[i]+" ");
-		}
-		
-		System.out.println();
-		int a=45;
-		System.out.print(a + " Found at index "+ Arrays.binarySearch(arr, a));
-		
-		
-//		BinarySearch(arr);
+		String str="ANMESH";
+		int index=1;
+		char c=str.charAt(index);
+		System.out.println("The character at given index "+ index+ " is " + c);
+
 	}
+
 }

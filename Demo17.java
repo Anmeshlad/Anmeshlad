@@ -1,41 +1,15 @@
-package ArrayDemos;
+package StringDemos;
 
-//Q. Write a program to put even and odd elements of array in two separate arrays.
+//Q. Write a program to check whether a given string starts with the contents of another string..
 
 public class Demo17 {
-	
-	public static void main(String[] args) {
-		System.out.print("Given Array: ");
-		int arr[]= {1,2,3,4,5,6,7,8,9,10};
-		
-		for(int i=0; i<arr.length;i++) {
-			  System.out.print(arr[i]+ " ");
-			}
-		
-		System.out.println(" ");
-		
-	    System.out.print(" Even Array Elements : ");
-	    int arr1[]= {};
-	    for(int i=0;i<arr.length;i++) {
-	    	if(arr[i]%2==0) {
-	    		arr1=arr;	
-	    		System.out.print(arr1[i]+" ");
-	    		
-	    	}
-	    }
-	    
-        System.out.println(" ");
-		
-	    System.out.print("Odd Array Elements : ");
-	    int arr2[]= {};
-	    for(int i=0;i<arr.length;i++) {
-	    	if(arr[i]%3==0) {
-	    		arr2=arr;	
-	    		System.out.print(arr2[i]+" ");
-	    	}
-	    	
-	    }
-	    
-	}
-}
 
+	public static void main(String[] args) {
+		String str1="hello omi";
+		String str2="hello ";
+		System.out.println(str1.startsWith(str2));
+		
+
+	}
+
+}

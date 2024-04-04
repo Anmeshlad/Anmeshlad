@@ -1,32 +1,21 @@
-package ArrayDemos;
+package StringDemos;
 
-//Q. Write a program to test if an array contains a specific value.
+//Q. Write a program to create a new String object with the contents of a character array 
+//& convert string array to character.
 
 public class Demo7 {
-	
-	static void specificvalue(int[]arr) {
-		int k=7;
-		int a=-1;
-		System.out.println();
-		for(int i=0;i<arr.length;i++) {
-			if(arr[i]==k) {
-				System.out.println("specific value present in array : " + arr[i]);
-			}else {
-				System.out.println("specific value not present in array : " );
-			}
-			break;
-		}
-	}
- 
+
 	public static void main(String[] args) {
-		System.out.println("Orignal Array : ");
-		int arr[]= {10,2,9,5,8};
-	    
-		for(int i=0;i<arr.length;i++) {
-			System.out.print(arr[i]+",");
-		}
-		System.out.println(" ");
+		char ch[]= {'A','n','m','e','s','h','l','a','d'};
+		String str=new String(ch);
+		System.out.println("convert character to String Array : "+str);
 		
-		specificvalue(arr);//static method call
+		String str1="Anmeshlad";
+		char ch2[]=str1.toCharArray();
+		System.out.println("convert String array to characters : ");
+		
+		for(char c : ch2) {
+			System.out.println(c);
+		}	
 	}
 }

@@ -1,36 +1,22 @@
-package ArrayDemos;
+package StringDemos;
+                                           
+//Q. Write a program to compare two strings lexicographically.
 
-import java.util.Arrays;
-//Q. Write a program sort array elements in using selection sort.
-import java.util.Scanner;
+//lexicographically means in dictionary order. If two strings are compared based on dictionary position,
+//the string that comes afterwards is said to be lexicographically greater.
+//It check first letter of both the strings if first string character same as second string character then 
+//it checks second character and so on . finally first string character is not match with second string
+//but it is greater than second string character string then return positive number otherwise it return negative number. 
 
 public class Demo3 {
-	static boolean isSorted(int[] arr) {
-		boolean check=true;
-		for(int i=1;i<arr.length;i++) {
-			if(arr[i] < arr[i-1]) {
-			check=false;
-			break;
-			}
-		}
-		return check;
-	}
-	
 
 	public static void main(String[] args) {
-//		int[] arr= {66,34,87,99,21,43};
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter the array size : ");
-		int n=sc.nextInt();
+		String str1="anmesh";
+		String str2="ganesh";
 		
-		int[] arr=new int[n];
-		System.out.println("Enter "+ n + " elements:");
-		for(int i=0;i<arr.length;i++) {
-			arr[i]=sc.nextInt();
-		}
+		System.out.println(str1.compareTo(str2));
 		
-		System.out.println("Array is sorted: "+ isSorted(arr));
-        
+
 	}
 
 }

@@ -1,33 +1,13 @@
-package ArrayDemos;
+package StringDemos;
 
-import java.util.Arrays;
-import java.util.Scanner;
-
-//Q. Write a program sort array elements in ascending order using bubble sort or using sort method.
+//Q. Write a program to check whether two String objects contain the same data.
 
 public class Demo12 {
 
-	static void BubbleSort(int arr[]) {
-		Arrays.sort(arr);
-		for (int i = 0; i < arr.length; i++) {
-		  System.out.println(arr[i]);
-		}
-	}
-
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the array size : ");
-		int x = sc.nextInt();
-		int arr[] = new int[x];
-
-		System.out.println("Enter the array elements : ");
-		for (int i = 0; i < arr.length; i++) {
-			arr[i] = sc.nextInt();
-		}
-         System.out.println();
-
-		BubbleSort(arr);  //static method
-		
+		String str1="anmesh";
+		String str2="lad";
+		System.out.println(str1.contentEquals(str2));
 
 	}
 
